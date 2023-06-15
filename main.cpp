@@ -176,9 +176,9 @@ void radixSort(vector<int>& arr) {
 }
 
 int main() {
-    // Open input file
+    // Open input file (input*xy*.txt) where x is 1 for unsorted and 2 for nearly sorted and y is for size, from 1 to 6
     ifstream inputFile;
-    inputFile.open("input.txt");
+    inputFile.open("input11.txt");
 
     // Read numbers from file
     vector<int> numbers;
@@ -196,7 +196,7 @@ int main() {
     //quickSort(numbers, 0, numbers.size() - 1);
     //mergeSort(numbers, 0, numbers.size() - 1);
     //countingSort(numbers);
-    //radixSort(numbers);
+    radixSort(numbers);
 
 
     // Close input file
